@@ -1,0 +1,99 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.centre_div{
+    width:100vw;
+    height: 60vh;
+    background-color: #FAF7F0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10;
+}
+.wave{
+    width:4rem;
+    height: 20rem;
+    background-color: #a4ff6b;
+    margin: 0;
+    border-radius: 0.4rem;
+    animation:waves 1s linear infinite;
+    -webkit-animation: waves 1s linear infinite;
+    transform-origin: bottom;
+}
+@keyframes waves{
+    0%{
+        transform:scale(0);
+    }
+    50%{
+        transform:scale(1);
+    }
+    100%{
+        transform:scale(0);
+    }
+}
+
+.wave:nth-child(2){
+    animation-delay: 0.1s;
+}
+.wave:nth-child(3){
+    animation-delay: 0.2s;
+}
+.wave:nth-child(4){
+    animation-delay: 0.3s;
+}
+.wave:nth-child(5){
+    animation-delay: 0.4s;
+}
+.wave:nth-child(6){
+    animation-delay: 0.5s;
+}
+.wave:nth-child(7){
+    animation-delay: 0.6s;
+}
+.wave:nth-child(8){
+    animation-delay: 0.7s;
+}
+.wave:nth-child(9){
+    animation-delay: 0.8s;
+}
+.wave:nth-child(10){
+    animation-delay: 0.9s;
+}
+.centre1_div{
+        width: 20vw;
+        height: 20vh;
+        background-color: #2f3542;
+        display:grid;
+        place-items: center;
+    }
+    .rider{
+        color: #fff;
+        font-size: 4rem;
+        text-transform: uppercase;
+        position: relative;
+    }
+    .rider::before{
+        content:"RECOGNISER";
+        width:100%;
+        color: #2ed573;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-right: 0.4rem solid #2ed573;
+        animation: slide 3s linear infinite;
+        -webkit-animation: slide 3s linear infinite;
+        overflow: hidden;
+    }
+     @keyframes slide{
+         0%{
+             width: 0%;
+         }
+         50%{
+             width: 100%;
+         }
+         100%{
+             width: 0%;
+         }
+     }
